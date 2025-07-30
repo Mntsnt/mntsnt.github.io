@@ -1,0 +1,376 @@
+/*
+    This file is part of the Portfolio PLP project.
+    It contains the styles for the portfolio website.
+    The styles are designed to create a clean and modern look.
+    I have tried to make the design clean as much as possible with
+    minimal design and graphics
+
+*/
+
+body {
+    background: #EEF3F8 ; /* cool white */
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.profile-name {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+}
+
+/* I tried to make a logo by blending B and H, the two letters are taken from the 
+project I stated about in the projects section. The name is Bale Helm. The project is inspired
+by the life of Joseph from the bible. */
+.bh-logo-anim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto 1rem auto;
+    font-size: 5rem;
+    font-family: 'Orbitron', Arial, sans-serif;
+    font-weight: 700;
+    position: relative;
+    width: 90px;
+    height: 70px;
+}
+
+.bh-b, .bh-h {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 
+        color 0.6s cubic-bezier(.4,2,.6,1),
+        transform 0.6s cubic-bezier(.4,2,.6,1),
+        opacity 0.6s cubic-bezier(.4,2,.6,1);
+}
+
+.bh-b {
+    color: #000;
+    z-index: 2;
+    animation: bh-b-move 2.5s infinite alternate;
+}
+
+.bh-h {
+    color: #000;
+    z-index: 1;
+    opacity: 0.7;
+    animation: bh-h-move 2.5s infinite alternate;
+}
+
+@keyframes bh-b-move {
+    0%   { transform: translateX(0) scale(1); opacity: 1; }
+    50%  { transform: translateX(18px) scale(1.1); opacity: 0.7; }
+    100% { transform: translateX(36px) scale(1); opacity: 0.5; }
+}
+
+@keyframes bh-h-move {
+    0%   { transform: translateX(36px) scale(1); opacity: 0.5; }
+    50%  { transform: translateX(18px) scale(1.1); opacity: 0.7; }
+    100% { transform: translateX(0) scale(1); opacity: 1; }
+}
+
+.education-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+#education {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 2rem 1.5rem;
+    flex: 1 1 320px;
+    min-width: 280px;
+    max-width: 420px;
+}
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.education-list li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #222;
+}
+
+.cv-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #4e8cff;
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.cv-link:hover {
+    background: #222;
+    color: #fff;
+}
+
+
+.interests-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem auto 0 auto;
+    max-width: 500px;
+}
+
+.interests-list li {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.interests-list i {
+    color: #4e8cff;
+    font-size: 1.3rem;
+}
+.skills-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circular-progress {
+    --size: 100px;
+    --stroke: 10px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: conic-gradient(
+        #4e8cff calc(var(--progress) * 1%), 
+        #e0e0e0 0
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.circular-progress::before {
+    content: '';
+    position: absolute;
+    width: calc(var(--size) - var(--stroke) * 2);
+    height: calc(var(--size) - var(--stroke) * 2);
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.progress-value {
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+    color: #4e8cff;
+    font-size: 1.2rem;
+}
+
+.skill-name {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #222;
+    font-weight: 500;
+}
+
+.projects-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    overflow: hidden;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+.project-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.project-desc {
+    padding: 1rem;
+    text-align: center;
+}
+
+.project-desc h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.project-desc p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+.contact-form {
+    max-width: 400px;
+    margin: 2rem auto 1.5rem auto;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-form,
+.contact-form * {
+    box-sizing: border-box;
+}
+.form-group {
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1.5px solid #cfd8dc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #f8fafc;
+    transition: border-color 0.2s;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4e8cff;
+    outline: none;
+}
+
+.contact-form button {
+    background: #4e8cff;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact-form button:hover {
+    background: #222;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    color: #222;
+    font-size: 2rem;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+.social-links a {
+    color: #222;         
+    font-size: 2rem;
+    transition: color 0.2s;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a:hover {
+    color: #4e8cff;    
+}

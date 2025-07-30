@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:700&display=swap" rel="stylesheet">
+</head>
+
+<!-- In the head section I have included all the resources I am going to use in the body section
+ like fonts, css files...   -->
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <nav>
+        <!-- mntsnt is when vowels are removed from my name Mintesnot, I think that is a cool and I used it às a logo-->
+        <div class="logo"><strong>mntsnt</strong></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="profile-line">
+            <span class="line"></span>
+                <img src="img/profile_pic.jpg" alt="Profile Picture" class="profile-pic">
+            <span class="line"></span>
+        </div>
+
+
+    <h2 class="profile-name">Mintesnot Leliso</h2>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm Mintesnot Leliso.</p>
+    <p>I'm a medical student, programmer, and graphic designer.</p>
+    <p>Explore my work and connect with me!</p>
+
+    <!--I tried to make a logo by blending B and H, the two letters are taken from the 
+project I stated about in the projects section. The name is Bale Helm. The project is inspired
+by the life of Joseph from the bible. -->
+
+         <div class="bh-logo-anim">
+            <span class="bh-b">B</span>
+             <span class="bh-h">H</span>
+        </div>
+    </section>
+
+<!-- About Me section-->
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a Christian whose faith is deeply rooted in Jesus Christ. I have a strong passion for programming and graphic designing, and I draw motivation from the belief that God has blessed me with the ability to pursue these skills.
+
+Currently, I'm a medical student at St. Paul's Hospital Millennium Medical College in Addis Ababa, Ethiopia. I chose this path with a purpose: to tackle healthcare challenges in my country and across Africa by combining my medical training with my knowledge in technology.
+
+I believe, by God's grace, this vision will become a reality in the near future.</p>
+        </section>
+
+        <section id="education">
+            <h2>Educational Background</h2>
+            <ul class="education-list">
+                <li>
+                    <strong>High School:</strong> Furra Model (Hayole)
+                </li>
+                <li>
+                    <strong>Current:</strong> Medical Student at St. Paul's Hospital Millennium Medical College (SPHMMC)
+                </li>
+            </ul>
+            
+        <a href="doc/MintesnotLelisoCV.pdf" class="cv-link" download>
+            <i class="fas fa-download"></i> Download CV
+        </a>
+    </section>
+
+    <!-- Interest Section-->
+<section id="interests">
+    <h2>Interests</h2>
+    <ul class="interests-list">
+        <li><i class="fas fa-code"></i> Programming & Coding</li>
+        <li><i class="fas fa-paint-brush"></i> Graphic Design</li>
+        <li><i class="fas fa-book"></i> Reading Inspirational Books</li>
+        <li><i class="fas fa-music"></i> Listening to Music</li>
+        <li><i class="fas fa-heartbeat"></i> Medical Science</li>
+        <li><i class="fas fa-bible"></i> Bible Study & Faith</li>
+        <li><i class="fas fa-users"></i> Volunteering & Community Service</li>
+    </ul>
+</section>
+
+<!-- Skills Section-->
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <div class="circular-progress" style="--progress: 70;">
+                <span class="progress-value">70%</span>
+            </div>
+            <span class="skill-name">HTML</span>
+        </div>
+        <div class="skill">
+            <div class="circular-progress" style="--progress: 60;">
+                <span class="progress-value">60%</span>
+            </div>
+            <span class="skill-name">CSS</span>
+        </div>
+        <div class="skill">
+            <div class="circular-progress" style="--progress: 30;">
+                <span class="progress-value">30%</span>
+            </div>
+            <span class="skill-name">JavaScript</span>
+        </div>
+        <div class="skill">
+            <div class="circular-progress" style="--progress: 50;">
+                <span class="progress-value">50%</span>
+            </div>
+            <span class="skill-name">Python</span>
+        </div>
+        <div class="skill">
+            <div class="circular-progress" style="--progress: 90;">
+                <span class="progress-value">90%</span>
+            </div>
+            <span class="skill-name">Adobe Photoshop</span>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section-->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="img/project1.png" alt="Project 1" class="project-img">
+            <div class="project-desc">
+                <h3>Bale Helm</h3>
+                <p>A project inspired by the life of Joseph from the Bible.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="img/project2.jpg" alt="Project 2" class="project-img">
+            <div class="project-desc">
+                <h3>Python Pioneers</h3>
+                <p>A Telegram channel dedicated to helping young students explore and learn Python programming.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="img/project3.jpg" alt="Project 3" class="project-img">
+            <div class="project-desc">
+                <h3>Ersun Simut</h3>
+                <p>I love graphic design, and I’ve created numerous posters, social media designs, and logos for various clients.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="img/project4.jpg" alt="Project 4" class="project-img">
+            <div class="project-desc">
+                <h3>SimplePyPrograms</h3>
+                <p>A GitHub repository with simple, beginner-friendly Python projects to help young students get started with coding.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="img/project5.jpg" alt="Project 5" class="project-img">
+            <div class="project-desc">
+                <h3>Personal Portfolio</h3>
+                <p>I built my personal portfolio to seek graphic design opportunities, using the GitHub.io domain to host it.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Me Section-->
+
+    <section id="contact">
+    <h2>Contact Me</h2>
+<form class="contact-form">
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+</form>
+<div class="social-links">
+</div>
+
+    <div class="social-links">
+        <a href="https://linkedin.com/in/mintesnotleliso" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Mntsnt" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/MintesnotLeliso" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@bale_helm" target="_blank" title="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://t.me/MntsntZP" target="_blank" title="Telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="mintesnoh@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+</section>
+</body>
+</html>
