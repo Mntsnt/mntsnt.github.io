@@ -1,5 +1,4 @@
-# plp-hackathon-portfolio
-# Mintesnot Leliso Portfolio
+# Mintesnot Leliso's PLP Hackathon Portfolio
 
 Welcome to my personal portfolio website!  
 This project was created for the Power Learn Project Hackathon and showcases my background, skills, interests, and projects as a medical student, programmer, and graphic designer.
