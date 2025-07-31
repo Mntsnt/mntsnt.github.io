@@ -53,8 +53,7 @@ Feel free to use or adapt it for your own portfolio.
 ---
 
 **Created by Mintesnot Leliso**  
-[LinkedIn](https://linkedin.com/in/mintesnotleliso)
-[GitHub](https://github.com/Mntsnt)
+[LinkedIn](https://linkedin.com/in/mintesnotleliso) | [GitHub](https://github.com/Mntsnt)
 
 
 *THANKYOU!*
