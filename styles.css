@@ -87,6 +87,7 @@ body {
 .nav-navBox h1 {
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-medium);
+  user-select: none;
 }
 .desc-box a,
 .proj-btn{
